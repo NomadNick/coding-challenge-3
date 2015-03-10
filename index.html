@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Build-a-Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Build-a-Library!</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form id="new-shelf">
+            <div class="form-group">
+              <label for="new-shelf-name">Shelf Name</label>
+              <input type="text" class="form-control" id="new-shelf-name">
+            </div>
+
+            <div id="new-books">
+              <div class="new-book">
+                <div class="form-group">
+                  <label for="new-title">Book Title</label>
+                  <input type="text" class="form-control new-title">
+                </div>
+                <div class="form-group">
+                  <label for="new-author-first-name">Author First Name</label>
+                  <input type="text" class="form-control new-author-first-name">
+                </div>
+                <div class="form-group">
+                  <label for="new-author-last-name">Author Last Name</label>
+                  <input type="text" class="form-control new-author-last-name">
+                </div>
+              </div>
+            </div>
+            <div id="buttons">
+            <span class="btn btn-default" id="add-book">Add Another Book?</span>
+
+            <button type="submit" class="btn btn-primary">Add Shelf and Books</button>
+            </div>
+            </form>
+
+          <h2 id="shelf-list">Shelves:</h2>
+          <ul id="shelves">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h2 id="book-list">Books:</h2>
+
+          <div id="show-shelf-contents">
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
